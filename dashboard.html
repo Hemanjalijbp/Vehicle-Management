@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Bookings Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+        }
+        .menu {
+            width: 200px;
+            height: 100vh;
+            background: #1d976c;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-top: 20px;
+        }
+        .menu a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px 0;
+            text-align: center;
+        }
+        .menu a:hover {
+            background: #148f65;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 40px;
+        }
+        h2 {
+            color: #1d976c;
+            text-align: center;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background: #1d976c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background: #148f65;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        th {
+            background: #1d976c;
+            color: white;
+        }
+        td input {
+            width: 95%;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <a href="#">Bookings</a>
+        <a href="#">Contact</a>
+        <a href="#">Logout</a>
+    </div>
+
+    <div class="content">
+        <h2>Admin Vehicle Bookings</h2>
+        <!-- Add New Booking Form -->
+        <form method="post" action="dashboard.php">
+            <label>Name</label>
+            <input type="text" name="name" required>
+
+            <label>Vehicle</label>
+            <input type="text" name="vehicle" required>
+
+            <label>Date</label>
+            <input type="date" name="date" required>
+
+            <button type="submit" name="add">Add Booking</button>
+        </form>
+
+        <!-- Bookings Table -->
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Vehicle</th>
+                <th>Date</th>
+                <th>Action</th>
+            </tr>

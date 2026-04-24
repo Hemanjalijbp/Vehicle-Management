@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best Vehicle Management System</title>
+
+<!-- Font Awesome 4.7 -->
+<link rel="stylesheet" href="font-awesome.min.css">
+
+<style>
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+.site-header {
+  background: #f4f4f4;
+  color: #333;
+  padding: 15px 5%;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid brown;
+}
+
+.site-header .logo {
+  height: 60px;
+  width: auto;
+  margin-right: 30px;
+  object-fit: contain;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+/* MARQUEE */
+marquee {
+  background: brown;
+  color: yellow;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* NAVIGATION */
+nav {
+  background: #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 25px;
+  font-weight: 600;
+  display: block;
+}
+
+nav ul li a:hover {
+  background: brown;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 8%;
+}
+
+h2 {
+  border-left: 5px solid brown;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+p {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.6;
+}
+
+img {
+  border-radius: 8px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* BOOKING SECTION */
+#booking-section {
+  background-color: #f9f9f9;
+  border-top: 2px solid brown;
+}
+
+.booking-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* FORM */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  background: brown;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.submit-btn:hover {
+  background: #a52a2a;
+}
+
+/* FOOTER */
+.footer {
+  background: #333;
+  padding: 40px 0;
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-box {
+  margin: 20px;
+}
+
+.footer-box h3 {
+  color: orange;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-box ul li a:hover {
+  color: white;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+}
+
+.social-icons .fa {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 20px;
+  margin: 5px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.fa-facebook { background: #3b5998; }
+.fa-instagram { background: #e1306c; }
+.fa-whatsapp { background: #25d366; }
+.fa-youtube { background: #ff0000; }
+
+.footer-bottom {
+  background: brown;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <!-- FIXED LOGO -->
+  <img src="https://via.placeholder.com/150x60?text=LOGO" class="logo" alt="Logo">
+  <h1>New Vehicle Booking Centre</h1>
+</header>
+
+<marquee>Welcome to all the vehicle showroom - Book your dream car now and enjoy</marquee>
+
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#history">History</a></li>
+    <li><a href="#booking-section">Book Now</a></li>
+  </ul>
+</nav>
+
+<section id="home">
+  <h2>Demo of the Cars</h2>
+  <p>A vehicle demo is a new car used for test drives and later sold at reduced cost.</p>
+  <img src="https://via.placeholder.com/300x200" alt="Car">
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>We provide best-in-class vehicle booking and management services.</p>
+  <img src="vehicle.jpg" alt="vehicle">
+</section>
+
+<section id="history">
+  <h2>History</h2>
+  <p>The invention of the wheel changed transportation forever.</p>
+  <img src="history evolution.webp" alt="history">
+</section>
+
+<section id="booking-section">
+  <div class="booking-container">
+    <h2 style="text-align:center;border:none;">Book Your Vehicle</h2>
+    <form>
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" required>
+      </div>
+
+      <div class="form-group">
+        <label>Phone</label>
+        <input type="tel" required>
+      </div>
+
+      <div class="form-group">
+        <label>Select Car</label>
+        <select>
+          <option>Mercedes</option>
+          <option>Baleno</option>
+          <option>Fronx</option>
+        </select>
+      </div>
+
+      <button class="submit-btn">SEND REQUEST</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-box">
+      <h3>Cars</h3>
+      <ul>
+        <li><a href="#">Mercedes</a></li>
+        <li><a href="#">Baleno</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="social-icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-whatsapp"></i>
+    <i class="fa fa-youtube"></i>
+  </div>
+</footer>
+
+<div class="footer-bottom">
+  All services are provided by the vehicle organization management
+</div>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+﻿<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VehiclePro</title>
+<!-- &#9989; BOOTSTRAP 3 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- &#9989; jQuery (Required for Bootstrap 3) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- &#9989; BOOTSTRAP 3 JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!-- FONT AWESOME CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+<style>
+
+/* ===== GLOBAL ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#fff;
+}
+
+/* ===== NAVBAR ===== */
+
+nav{
+background:#000;
+color:#fff;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 60px;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+.nav-center{
+list-style:none;
+}
+
+.nav-center li{
+display:inline-block;
+position:relative;
+}
+
+.nav-center a{
+color:#fff;
+text-decoration:none;
+font-size:18px;
+}
+
+.book-btn{
+background:#ff5a1f;
+color:#fff;
+padding:10px 18px;
+border-radius:5px;
+text-decoration:none;
+}
+
+/* VEHICLE DROPDOWN */
+
+.vehicles-menu{
+position:absolute;
+top:70px;
+left:50%;
+transform:translateX(-50%);
+background:#ffffff;   /* solid background */
+padding:30px 50px;
+display:flex;
+gap:70px;
+border-radius:10px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+opacity:0;
+visibility:hidden;
+transition:0.3s;
+z-index:9999;
+}
+
+.nav-center li:hover .vehicles-menu{
+opacity:1;
+visibility:visible;
+}
+
+/* vehicle item */
+
+.vehicle-item{
+text-align:center;
+color:#000;
+}
+
+.vehicle-item h4{
+color:#000;
+margin-top:10px;
+}
+
+.vehicle-item p{
+color:#444;
+cursor:pointer;
+}
+
+.vehicle-item img{
+width:150px;
+height:90px;
+object-fit:cover;
+border-radius:5px;
+}
+/* ===== HERO SECTION ===== */
+
+.hero{
+
+height:100vh;
+
+background:url("https://images.unsplash.com/photo-1503376780353-7e6692767b70") center/cover no-repeat;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+margin-top:70px;
+
+}
+
+.hero h1{
+
+color:#fff;
+font-size:60px;
+background:rgba(0,0,0,0.4);
+padding:20px 40px;
+border-radius:10px;
+
+}
+
+a{
+	color:white;
+	text-decoration:none;
+	
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+
+<nav>
+
+<div class="logo">VehiclePro</div>
+
+<ul class="nav-center">
+
+<li>
+
+<a href="#">Vehicles</a>
+
+<div class="vehicles-menu">
+
+<div class="vehicle-item">
+<img src="model.jpg" class="image-responsive" alt="res" width="307" height="240">
+
+<h4>Model S</h4>
+<p>Learn</p>
+<p>Order</p>
+</div>
+
+<div class="vehicle-item">
+<img src="model.jpg2" class="image-responsive" alt="res" width="307" height="240">
+<h4>Model 3</h4>
+<p>Learn</p>
+<p>Order</p>
+</div>
+
+<div class="vehicle-item">
+<img src="model.jpg3" class="image-responsive" alt="res" width="307" height="240">
+<h4>Model X</h4>
+<p>Learn</p>
+<p>Order</p>
+</div>
+
+<div class="vehicle-item">
+<img src="model4.jpg" class="image-responsive" alt="res" width="307" height="240">
+<h4>Model Y</h4>
+<p>Learn</p>
+<p>Order</p>
+</div>
+
+</li>
+
+</ul>
+
+<a href="onlineform.php">online form</a>
+<a href="vinsert.php">vinsert</a>
+<a href="admin_login.php">admin_login</a>
+<a href="admin_dashboard.php">admin_dashboard</a>
+<a href="dashboard.php">dashboard</a>
+<a href="logout.php">logout</a>
+</nav>
+
+
+<!-- ===== HERO SECTION ===== -->
+
+<section class="hero">
+
+<h1>Premium Car Collection</h1>
+
+</section>
+
+</body>
+</html>

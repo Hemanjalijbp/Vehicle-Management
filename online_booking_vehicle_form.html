@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Online Vehicle Booking Form</title>
+
+<style>
+*{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #1d976c, #93f9b9);
+    margin: 0;
+    padding: 0;
+}
+
+/* Form Box */
+.form-box{
+    width: 400px;
+    background: white;
+    padding: 25px;
+    margin: 60px auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+.form-box h2{
+    text-align: center;
+    color:orange;
+   
+    margin-bottom: 15px;
+}
+
+/* Labels */
+label{
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Inputs */
+input[type=text],
+input[type=date],
+input[type=number]{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus{
+    border-color: #1d976c;
+    box-shadow: 0 0 5px #1d976c;
+}
+
+/* Submit Button */
+input[type=submit]{
+    background-color: #1d976c;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+input[type=submit]:hover{
+    background-color: #148f68;
+}
+
+/* Footer */
+.footer{
+    background-color:orange;
+    color: green;
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-box h3{
+    color:brown;
+}
+
+.footer-box ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-box ul li{
+    margin: 6px 0;
+}
+
+.footer-box ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-box ul li a:hover{
+    text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media(max-width:500px){
+    .form-box{
+        width: 90%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="form-box">
+<h2>🚗 Online Vehicle Booking</h2>
+
+<form method="post">
+<label>Name</label>
+<input type="text" name="name" required>
+
+<label>Vehicle Name</label>
+<input type="text" name="vehicle" required>
+
+<label>Date</label>
+<input type="date" name="date" required>
+
+<label>Amount</label>
+<input type="number" name="amount" required>
+
+<input type="submit" value="Save Booking">
+</form>
+</div>
+
+<footer class="footer">
+<div class="footer-container">
+
+<div class="footer-box">
+<h3>Branded Cars</h3>
+<ul>
+<li><a href="#">Mercedes</a></li>
+<li><a href="#">Nexa Fronx</a></li>
+<li><a href="#">Baleno</a></li>
+</ul>
+</div>
+
+<div class="footer-box">
+<h3>Booking</h3>
+<ul>
+<li><a href="#">Book Now</a></li>
+<li><a href="#">Deals & Rewards</a></li>
+<li><a href="#">Car Rentals</a></li>
+</ul>
+</div>
+
+<div class="footer-box">
+<h3>Company</h3>
+<ul>
+<li><a href="#">Career</a></li>
+<li><a href="#">Our Story</a></li>
+<li><a href="#">Partners</a></li>
+</ul>
+</div>
+
+</div>
+</footer>
+
+</body>
+</html>

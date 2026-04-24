@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vehicle Management System</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+/* ===== GLOBAL ===== */
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#f5f5f5;
+}
+
+/* ===== HEADER ===== */
+.site-header{
+  background:#222;
+  color:#fff;
+  padding:10px 40px;
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.site-header img{
+  width:120px;   /* LOGO SIZE CONTROL */
+  height:auto;
+}
+
+.site-header h1{
+  margin:0;
+  font-size:26px;
+}
+
+/* ===== MARQUEE ===== */
+marquee{
+  background:#d9534f;
+  color:#fff;
+  padding:8px;
+  font-weight:bold;
+}
+
+/* ===== NAVIGATION ===== */
+nav{
+  background:#333;
+}
+
+nav ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content:center;
+}
+
+nav ul li a{
+  display:block;
+  padding:15px 25px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+nav ul li a:hover{
+  background:#d9534f;
+}
+
+/* ===== SECTIONS ===== */
+section{
+  padding:40px;
+  background:#fff;
+  margin:20px;
+}
+
+h2{
+  border-left:5px solid #d9534f;
+  padding-left:10px;
+}
+
+p{
+  font-size:16px;
+  color:#444;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+  background:#1f1f1f;
+  color:#fff;
+  padding:40px 0 20px;
+}
+
+.footer-container{
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+}
+
+/* Footer Lists */
+.footer ul{
+  list-style:none;
+  padding:0;
+}
+
+.footer h3{
+  color:#d9534f;
+}
+
+.footer ul li{
+  margin:10px 0;
+}
+
+.footer ul li a{
+  color:#ccc;
+  text-decoration:none;
+  font-size:15px;
+}
+
+.footer ul li a:hover{
+  color:#fff;
+}
+
+/* ===== SOCIAL ICONS ===== */
+.social-icons{
+  text-align:center;
+  margin-top:20px;
+}
+
+.social-icons a{
+  text-decoration:none;
+}
+
+.social-icons .fa{
+  width:45px;
+  height:45px;
+  line-height:45px;
+  margin:5px;
+  border-radius:50%;
+  color:#fff;
+  text-align:center;
+  font-size:20px;
+}
+
+.fa-facebook{background:#3b5998;}
+.fa-instagram{background:#e1306c;}
+.fa-whatsapp{background:#25d366;}
+.fa-youtube{background:#ff0000;}
+
+/* ===== FOOTER BOTTOM ===== */
+.footer-bottom{
+  background:#111;
+  color:#ccc;
+  text-align:center;
+  padding:12px;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <img src="images/logo.png">
+  <h1>New Vehicle Booking Centre</h1>
+</header>
+
+<marquee>Welcome to all the vehicle showroom – book your car now</marquee>
+
+<!-- NAVIGATION -->
+<nav>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#history">History</a></li>
+  <li><a href="#subsidiary">Subsidiary</a></li>
+  <li><a href="#innovation">Innovation</a></li>
+</ul>
+</nav>
+
+<!-- SECTIONS -->
+<section id="home">
+<h2>Demo of the Cars</h2>
+<p>A vehicle demo is a new car used for test drives and later sold at reduced cost.</p>
+</section>
+
+<section id="about">
+<h2>About Us</h2>
+<p>We provide smart vehicle booking and management solutions.</p>
+</section>
+
+<section id="history">
+<h2>History</h2>
+<p>The wheel changed transportation forever.</p>
+</section>
+
+<section id="subsidiary">
+<h2>Subsidiary</h2>
+<p>Tata, Maruti, Daimler and Bajaj Auto.</p>
+</section>
+
+<section id="innovation">
+<h2>Innovation</h2>
+<p>Electric vehicles and AI-driven systems are the future.</p>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- PICKUPS -->
+    <ul>
+      <h3>PICK-UPS</h3>
+      <li><a href="bolero.html">Bolero Pickup</a></li>
+      <li><a href="maxx.html">Maxx City</a></li>
+      <li><a href="veero.html">Veero</a></li>
+    </ul>
+
+    <!-- ABOUT -->
+    <ul>
+      <h3>ABOUT</h3>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <!-- CUSTOMER -->
+    <ul>
+      <h3>CUSTOMER</h3>
+      <li><a href="service.html">Service Centers</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="dealer.html">Dealer Locator</a></li>
+    </ul>
+
+  </div>
+</footer>
+  </div>
+
+  <!-- SOCIAL ICONS -->
+  <div class="social-icons">
+    <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a href="https://whatsapp.com" target="_blank"><i class="fa fa-whatsapp"></i></a>
+    <a href="https://youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
+  </div>
+</footer>
+
+<div class="footer-bottom">
+  ALL THE SERVICES PROVIDED BY THE STAFF VERY SINCERELY AND VEHICLE STAFFS
+</div>
+
+</body>
+</html>
